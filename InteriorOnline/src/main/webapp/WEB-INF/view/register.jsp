@@ -36,7 +36,7 @@
   	<div class="modal-dialog">
   	<div class="modal-content">
   	<div class="modal-header">
-  		<h2 class="text-center">Register in 3Store</h2>
+  		<h2 class="text-center">Register in Interior Online</h2>
   	
   	<div class="modal-body">
   		<form class="col-md-12 center-block">
