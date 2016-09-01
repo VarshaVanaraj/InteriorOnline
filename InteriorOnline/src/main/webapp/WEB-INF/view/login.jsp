@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>3Store login</title>
+<title>Interior Online login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
@@ -30,14 +30,14 @@
   <body>
   	<div class="container-fluid">
   	<div class="jumbotron">
-  		<h1>Home Decor</h1>
+  		<h1>Interior Online</h1>
   		<p>Everything your home needs</p>
   	</div>
   	<div class="modal-dialog">
   	<div class="modal-content">
   	<div class="modal-header">
   	<div class="img">
-  		<img src="Chrysanthemum.jpg" class="img-circle" height="100px" width=100px"\></div>
+  		<img src="resources/images/Chrysanthemum.jpg" class="img-circle" height="100px" width=100px"\></div>
   		<h2 class="text-center">My Account</h2>
   	
   	<div class="modal-body">

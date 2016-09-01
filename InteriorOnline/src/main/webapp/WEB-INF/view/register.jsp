@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>3Store registration</title>
+<title>Interior Online regn</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
@@ -30,8 +30,8 @@
 <body>
 <div class="container-fluid">
   	<div class="jumbotron">
-  		<h1>3Store</h1>
-  		<p>Plant trees,Plant values</p>
+  		<h1>Register in Interior Online</h1>
+  		
   	</div>
   	<div class="modal-dialog">
   	<div class="modal-content">
