@@ -14,8 +14,9 @@
   }
   .img-thumbnail
   {
-  height:25px;
+  height:35px;
   width:35px;
+  bottom:20px;
   }
   .img-responsive
   {
@@ -39,9 +40,25 @@
   background-color:#ffcc99;
   color:white; 
   }
-#my-slider
-  {
-  size:cover;
-  
+  .leg-room 
+  { 
+  margin-bottom: 20px; padding-bottom: 20px;
   }
-  .leg-room { margin-bottom: 20px; padding-bottom: 20px; }
+  #iconimg
+  {
+  position:relative;
+  left:243px;
+  }
+  #sze
+  {
+  top:50px;
+  }
+   .modal-body
+  {
+  font-size:15px;
+  background:#ffffcc;
+  }
+  .navbar-text > a {
+	color: inherit; 
+	text-decoration: none;
+}

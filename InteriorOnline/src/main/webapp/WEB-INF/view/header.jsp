@@ -19,19 +19,19 @@
     <a class="navbar-brand" href="#"><img src="resources/images/icon1.png" class="img-thumbnail pull-left"/>Interior Online</a> 
     <ul class="nav navbar-nav pull-left">
     <li class="nav-item active">
-      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="home">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/Register">Register</a>
+      <a class="nav-link" href="register">Register</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/Login">Login</a>
+      <a class="nav-link" href="login">Login</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/About">About Us</a>
+      <a class="nav-link" href="about">About Us</a>
     </li>
      <li class="nav-item">
-      <a class="nav-link" href="/Contact">Contact Us</a>
+      <a class="nav-link" href="contact">Contact Us</a>
     </li>
     </ul>
     <form class="form-inline pull-xs-right">

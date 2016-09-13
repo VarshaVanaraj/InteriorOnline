@@ -1,6 +1,7 @@
 package com.niit.controller;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class InteriorController 
@@ -35,7 +36,16 @@ public String ShowContact()
 {
 	return "contact";
 }
+@RequestMapping(value="/product", method=RequestMethod.GET)
+public ModelAndView productList()
+{
+	ModelAndView mod=new ModelAndView("products");
+	mod.addObject("pro");
+	return mod;
 }
+}
+
+
 
 	 
 

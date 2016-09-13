@@ -8,7 +8,7 @@
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css">
-  <script src="resources/bootstrap/jquery.min.js"></script>
+  <script src="resources/bootstrap/js/jquery.min.js"></script>
   <script src="resources/bootstrap/js/bootstrap.min.js"></script>
   <script src="resources/bootstrap/js/angular.min.js"></script>
   <link rel="stylesheet" href="resources/bootstrap/css/styles.css">
@@ -48,7 +48,7 @@
 	<p>our leading products exclusively for interior decoration</p>
 </div>
 </div>
-<div class="container container-fluid pull-left">
+<div class="container container-fluid">
   <div class="row">
   	<div class="col-sm-12" style="width:900px;height:600px;">
   	  <div id="my-slider" class="carousel slide" data-ride="carousel">
@@ -104,6 +104,7 @@
   		<td>{{search.price}}</td>	
   	</tr>
    </table>
+   <%@ include file="footer.jsp" %>
   </body>
   </html>
   	
