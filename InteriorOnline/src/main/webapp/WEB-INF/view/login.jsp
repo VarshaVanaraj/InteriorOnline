@@ -23,7 +23,8 @@
   				<input type="password" class="form-control input-lg" placeholder="password"><br>
   			</div>
   			<div class="align-center">
-  				<input class="btn btn-default btn-lg" type="submit" value="Login"><br>
+  				<a href="/loginbtn">
+  				<input class="btn btn-default btn-lg" type="submit" value="Login"><br></a>
   				<a href="register" class="pull-right"><big><u>Register</u></big></a>
   			</div>
  	 		</form>

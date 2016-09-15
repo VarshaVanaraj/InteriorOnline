@@ -5,7 +5,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class LoginController {
 	
-	@RequestMapping("/login")
+	@RequestMapping("/loginbtn")
 	public ModelAndView loginPg()
 	{
 		ModelAndView mo=new ModelAndView("loginpg");

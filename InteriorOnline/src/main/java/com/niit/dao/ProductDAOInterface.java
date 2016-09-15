@@ -1,5 +1,4 @@
 package com.niit.dao;
-import com.niit.controller;
 import java.util.List;
 
 import com.niit.model.ModelProduct;

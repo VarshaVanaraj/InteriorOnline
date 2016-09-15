@@ -1,6 +1,9 @@
 package com.niit.dao;
-import com.niit.controller;
+import com.niit.model.ModelProduct;
+
 import java.util.List;
+
+import org.springframework.stereotype.Repository;
 
 
 @Repository
