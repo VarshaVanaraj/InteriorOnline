@@ -1,7 +1,10 @@
 package com.niit.controller;
 import org.springframework.stereotype.*;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.niit.model.ModelProduct;
 
 @Controller
 public class InteriorController 
@@ -37,11 +40,12 @@ public String ShowContact()
 	return "contact";
 }
 @RequestMapping(value="/product", method=RequestMethod.GET)
-public ModelAndView productList()
+public ModelAndView addProduct(@ModelAttribute("command")ModelProduct product,BindingResult result){
 {
 	ModelAndView mod=new ModelAndView("products");
 	mod.addObject("pro");
 	return mod;
+}
 }
 }
 

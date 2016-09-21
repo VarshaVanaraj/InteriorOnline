@@ -38,10 +38,11 @@
   <property name="username" value="sa" /> 
   <property name="password" value="" /> 
   </bean>
-  <context:component-scan base-package="com.niit.controller" /> 
-  <context:component-scan base-package="com.niit.model" /> 
-  <context:component-scan base-package="com.niit.dao" /> 
-  <context:component-scan base-package="com.niit.service" /> 
+  
+  <context:component-scan base-package="com.niit.model" />  
+  <context:component-scan base-package="com.niit.controller" />  
+  <context:component-scan base-package="com.niit.dao" />  
+  <context:component-scan base-package="com.niit.service" />  
   <tx:annotation-driven /> 
  <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
   <property name="sessionFactory" ref="sessionFactory" /> 
