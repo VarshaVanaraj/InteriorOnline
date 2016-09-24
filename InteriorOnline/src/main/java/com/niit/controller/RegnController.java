@@ -2,20 +2,15 @@ package com.niit.controller;
 
 import java.util.Map;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
-
-import com.niit.service.*;
 import com.niit.model.RegnModel;
+import com.niit.service.RegnService;
 
 @Controller
 public class RegnController {
@@ -23,7 +18,7 @@ public class RegnController {
     @Autowired
     private RegnService RegnService;
  
-    @RequestMapping(value = "/register", method = RequestMethod.GET)
+  /*  @RequestMapping(value = "/register", method = RequestMethod.GET)
     public ModelAndView showForm() {
         return new ModelAndView("RegnForm", "regn", new RegnModel());
     }
@@ -39,10 +34,10 @@ public class RegnController {
         model.addAttribute("pwd", reg.getPwd());
         return "login";
     }
-}
+}*/
     
     
- /*   @RequestMapping("/register")
+    @RequestMapping("/registern")
     public String listUsers(Map<String, Object> map) {
         map.put("reg", new RegnModel());
         map.put("regList", RegnService.listUsers());
@@ -50,7 +45,7 @@ public class RegnController {
     }
  
     @RequestMapping(
-        value = "/register",
+        value = "/registern",
         method = RequestMethod.POST
     )
     public String addUser(@ModelAttribute("RegnForm")
@@ -65,7 +60,7 @@ public class RegnController {
         return "redirect:/index";
     }
  
-   @RequestMapping("/delete/{UserId}")
+ /*  @RequestMapping("/delete/{UserId}")
     public String deleteUser(
         @PathVariable("UserId") Integer UserId)
     {
@@ -81,5 +76,5 @@ public class RegnController {
         map.put("reg", RegnService.getUserById(UserId));
         map.put("UserList", RegnService.listUsers());
         return "reg";
-    }
-    */
+    }*/
+}

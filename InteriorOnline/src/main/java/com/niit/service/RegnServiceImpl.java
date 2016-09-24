@@ -31,7 +31,7 @@ public class RegnServiceImpl implements RegnService {
 		return regnDao.listUsers();
 	}
 
-	@Transactional
+	/*@Transactional
 	public RegnModel getUserById(Integer UserId) {
 		return regnDao.getUserById(UserId);
 	}
@@ -40,6 +40,6 @@ public class RegnServiceImpl implements RegnService {
 	public void removeUser(Integer id) {
 		regnDao.removeUser(id);
 		
-	}
+	}*/
 
 }

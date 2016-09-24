@@ -1,4 +1,5 @@
- <beans xmlns="http://www.springframework.org/schema/beans" 
+ <beans:beans xmlns="http://www.springframework.org/schema/mvc" 
+ 		xmlns:beans="http://www.springframework.org/schema/beans"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		xmlns:c="http://www.springframework.org/schema/c" 
 		xmlns:context="http://www.springframework.org/schema/context" 
@@ -17,34 +18,34 @@
 		http://www.springframework.org/schema/jee/spring-jee.xsd 
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
- <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-  <property name="dataSource" ref="dataSource" /> 
- <property name="packagesToScan">
- <list>
-  <value>com.niit</value> 
-  </list>
-  </property>
- <property name="hibernateProperties">
- <props>
-  <prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop> 
-  <prop key="hibernate.show_sql">true</prop> 
-  <prop key="hibernate.hbm2ddl.auto">update</prop> 
-  </props>
-  </property>
-  </bean>
- <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-  <property name="driverClassName" value="org.h2.Driver" /> 
-  <property name="url" value="jdbc:h2:tcp://localhost/~/test" /> 
-  <property name="username" value="sa" /> 
-  <property name="password" value="" /> 
-  </bean>
+ <beans:bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+  <beans:property name="dataSource" ref="dataSource" /> 
+ <beans:property name="packagesToScan">
+ <beans:list>
+  <beans:value>com.niit</beans:value> 
+  </beans:list>
+  </beans:property>
+ <beans:property name="hibernateProperties">
+ <beans:props>
+  <beans:prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</beans:prop> 
+  <beans:prop key="hibernate.show_sql">true</beans:prop> 
+  <beans:prop key="hibernate.hbm2ddl.auto">update</beans:prop> 
+  </beans:props>
+  </beans:property>
+  </beans:bean>
+ <beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+  <beans:property name="driverClassName" value="org.h2.Driver" /> 
+  <beans:property name="url" value="jdbc:h2:tcp://localhost/~/test" /> 
+  <beans:property name="username" value="sa" /> 
+  <beans:property name="password" value="" /> 
+  </beans:bean>
   
   <context:component-scan base-package="com.niit.model" />  
   <context:component-scan base-package="com.niit.controller" />  
   <context:component-scan base-package="com.niit.dao" />  
   <context:component-scan base-package="com.niit.service" />  
   <tx:annotation-driven /> 
- <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
-  <property name="sessionFactory" ref="sessionFactory" /> 
-  </bean>
-  </beans>
+ <beans:bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+  <beans:property name="sessionFactory" ref="sessionFactory" /> 
+  </beans:bean>
+  </beans:beans>
