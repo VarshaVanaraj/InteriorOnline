@@ -11,7 +11,7 @@
   	<div class="modal-content">
   	<div class="modal-header">
   	<div class="img">
-  		<img id="iconimg" src="resources/images/Chrysanthemum.jpg" class="img-circle" height="100px" width=100px"\></div>
+  		<img id="iconimg" src="resources/images/Chrysanthemum.jpg" class="img-circle" height="100px" width="100px"/></div>
   		<h2 class="text-center">My Account</h2>
   	
   	<div class="modal-body">

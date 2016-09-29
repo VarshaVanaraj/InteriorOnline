@@ -15,32 +15,32 @@
   		<h2 class="text-center">Register in Interior Online</h2>
   	
   <div class="modal-body">
-  <form:form method="POST" action="registern" ModelAttribute="RegnForm">
+  <form:form method="POST" action="register" commandName="regnForm">
       <table>
-       <tr>
+      <%-- <tr>
            <td><form:label path="id">Customer ID:</form:label></td>
            <td><form:input path="id" value="${id}" readonly="true"/></td>
-       </tr>
+       </tr> --%>   
        <tr>
            <td><form:label path="name">Name:</form:label></td>
-           <td><form:input path="name" value="${name}"/></td>
+           <td><form:input path="name"/></td>
        </tr>
        <tr>
        		<td><form:label path="email">E-mail address</form:label></td>
-       		<td><form:input path="email" value="${email}"/></td>
+       		<td><form:input path="email"/></td>
        </tr>
        <tr>
            <td><form:label path="uname">Username:</form:label></td>
-           <td><form:input path="uname" value="${uname}"/></td>
+           <td><form:input path="uname"/></td>
        </tr>
        <tr>
            <td><form:label path="pwd">Password:</form:label></td>
-           <td><form:password path="pwd" value="${pwd}"/></td>
+           <td><form:password path="pwd"/></td>
        </tr>
        
        <tr>
            <td><form:label path="cpwd">Confirm Password:</form:label></td>
-           <td><form:password path="cpwd" value="${cpwd}"/></td>
+           <td><form:password path="cpwd"/></td>
        </tr>
        <tr>
          <td colspan="2"><input type="submit" value="Submit"/></td>
