@@ -15,7 +15,7 @@
   		<h2 class="text-center">Register in Interior Online</h2>
   	
   <div class="modal-body">
-  <form:form method="POST" action="/register" commandName="regnForm">
+  <form:form method="POST" action="register_" commandName="regForm">
       <table>
       <%-- <tr>
            <td><form:label path="id">Customer ID:</form:label></td>

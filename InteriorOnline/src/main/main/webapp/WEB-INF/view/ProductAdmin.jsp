@@ -4,14 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Contact us</title>
-<%@include file="header.jsp" %>
+<title>Product page</title>
 </head>
 <body background="resources/images/Purple-wallpaper-3.jpg" class="body-style"><br><br>
-<h1>Contact Us</h1><br><br>
-<p>If you have any queries or need any suggestions regarding interior decoration,</p>
-<p>please contact our support team through mail</p>
-<p><b><u>interioronline16@gmail.com</u></b></p>
-<p>or connect with us through social media</p>
+<h1><a href="addProduct">Add Product</a></h1><br><br>
+<h1><a href="viewPdt">View Product</a></h1>
 </body>
 </html>

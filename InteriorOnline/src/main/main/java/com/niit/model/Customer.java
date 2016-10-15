@@ -11,23 +11,27 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 public class Customer {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String id;
 
-	@Column
+	@Column(name="Name")
 	private String name;
-	@Column
+	
 	@NotEmpty
+	@Column(name="UserName")
 	private String uname;
-	@Column
+	
 	@NotEmpty
 	@Size(min = 4, max = 20)
+	@Column(name="Password")
 	private String pwd;
+	
 	@NotEmpty
 	private String cpwd;
-	@Column
+	
 	@NotEmpty
 	@Email
+	@Column(name="email")
 	private String email;
 
 	public String getName() {

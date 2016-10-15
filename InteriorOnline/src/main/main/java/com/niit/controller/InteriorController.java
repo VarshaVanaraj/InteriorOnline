@@ -6,24 +6,27 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class InteriorController {
 	@RequestMapping("/")
-	public String ShowIndex() {
+	public String ShowIndex(){
 		return "index";
 	}
-
+	
 	@RequestMapping("/home")
 	public String ShowHome() {
 		return "index";
 	}
+
+	
+	@RequestMapping("/admin")
+	public String ShowAdmin() {
+		return "admin";
+	}
+
 
 	@RequestMapping("/login")
 	public String ShowLogin() {
 		return "login";
 	}
 
-	/*@RequestMapping("/register")
-	public String ShowRegister() {
-		return "register";
-	}*/
 
 	@RequestMapping("/about")
 	public String ShowAbout() {

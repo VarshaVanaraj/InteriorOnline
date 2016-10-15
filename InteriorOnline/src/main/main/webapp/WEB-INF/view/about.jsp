@@ -4,9 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>About us</title>
 </head>
-<body>
-
+<body background="resources/images/Purple-wallpaper-3.jpg" text="white">
+<%@include file="header.jsp" %>
+<div class="body-style"><br><br>
+<h1>About Us</h1><br><br>
+<p>Interior Online is an e-commerce site created in 2016 </p>
+<p>for purchase of wide range of products</p> 
+<p>exclusively for decorating our homes</p>
+</div>
 </body>
 </html>
